@@ -1,0 +1,478 @@
+body {
+  margin: 0;
+}
+
+/*  Body Header */
+
+#body-header {
+  height: 65vh;
+  background-image: url("D:/MySystem/jpg/desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Horizontal-list */
+
+.horizontal-list {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+.horizontal-list li {
+  display: inline-block;
+  margin: 0px 8px 8px 0px;
+  
+}
+.horizontal-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+ .nav-menu li a{
+  transition: color 0.5s border-bottom 4s;
+}
+.nav-menu li a:hover {
+  color: rgb(255, 253, 253);
+  border-bottom: 2px solid rgb(250, 248, 248);
+  /* color: rgb(93, 91, 91);
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px; */
+}
+.text-center {
+  text-align: center;
+}
+
+/* Name and Social Icons */
+#name-social-container {
+  margin-top: 20vh;
+}
+#my-name {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  color: whitesmoke;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  margin-top: -25px;
+  text-shadow: 12px 12px 10px black;
+}
+.social-icons li a i {
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  margin-top: 25px;
+}
+.social-icons li a i:hover {
+  box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+  color: white;
+}
+/******* section classes  *********/
+
+section {
+  width: 100%;
+  /* height: 75vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section:nth-child(2n) {
+  background-color: #9e9b9b29;
+}
+section:nth-child(2n + 1) {
+  background-color: white;
+}
+.section-heading {
+  width: auto;
+  padding: 20px 10px 10px;
+  margin: 10px auto;
+  font-weight: 400;
+}
+.section-heading span {
+  font-size: 40px;
+  color: #2857a4;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
+}
+
+/* about section */
+
+#about {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+#my-image {
+  height: 12rem;
+  width: 12rem;
+  margin: auto;
+  margin-top: -17vh;
+}
+#my-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid white;
+ }
+.text-highlight {
+  color: blue;
+  font-weight: 700;
+}
+#about-para {
+  font-size: x-large;
+  margin: 50px 253px;
+  text-align: justify;
+  line-height: 30px;
+  letter-spacing: 2.5px;
+}
+
+/******* Skill section  *****/
+
+.skill-display {
+  width: 70%;
+  height: auto;
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-areas:
+    "one two three"
+    "four five six"
+    "seven eight nine";
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 60px;
+}
+.skill-progress {
+  width: 7rem;
+  height: 1.8rem;
+  background-color: rgb(216, 214, 214);
+  border-radius: 0.8rem;
+  box-shadow: 5px 5px 5px grey;
+
+  margin: 15px;
+}
+.skill-progress > div {
+  border-radius: 20px 0px 0px 20px;
+}
+.skill-name span {
+  color: white;
+  font-size: 1.3rem;
+  font-family: monospace;
+  margin-left: 10px;
+}
+/******* common margin classes *********/
+
+.mb75px {
+  margin-bottom: 75px;
+}
+
+/************ common color classes *******/
+
+.text-highlight {
+  color: #2857a4;
+  font-weight: 600;
+}
+.mb-blue {
+  margin-bottom: #2857a4;
+}
+
+/******** percentage classes *********/
+
+.eighty-five-percent {
+  width: 55%;
+  height: inherit;
+  background-color: blue;
+  text-align: center;
+  grid-area: one;
+}
+
+.seventy-five-percent {
+  width: 85%;
+  height: inherit;
+  background-color: orangered;
+  text-align: center;
+  /* margin-top: 25px; */
+  grid-area: two;
+}
+.ninty-five-percent {
+  width: 90%;
+  height: inherit;
+  background-color: rgb(198, 11, 83);
+  text-align: center;
+  grid-area: three;
+}
+.sixty-five-percent {
+  width: 80%;
+  height: inherit;
+  background-color: green;
+  text-align: center;
+  grid-area: four;
+}
+.hundared-percent {
+  width: 45%;
+  height: inherit;
+  background-color: rgb(254, 2, 254);
+  text-align: center;
+  grid-area: five;
+}
+.six {
+  width: 65%;
+  height: inherit;
+  background-color: rgb(78, 54, 112);
+  text-align: center;
+  grid-area: six;
+}
+.seventh {
+  width: 40%;
+  height: inherit;
+  background-color: yellow;
+  text-align: center;
+  grid-area: seven;
+}
+.eigth {
+  width: 88%;
+  height: inherit;
+  background-color: rgb(16, 223, 213);
+  text-align: center;
+  grid-area: eight;
+}
+.nine {
+  width: 38%;
+  height: inherit;
+  background-color: rgb(255, 0, 0);
+  text-align: center;
+  grid-area: nine;
+}
+/* timeline */
+
+.timeline {
+  position: relative;
+  width: 75%;
+  /* border: 2px solid black; */
+}
+.timeline-box {
+  position: relative;
+  width: 40%;
+  left: 5%;
+  min-height: 150px;
+  /* border: 2px solid black; */
+  margin-top: 50px;
+}
+.timeline-box .wx-img img {
+  width: 35px;
+  margin: 5px;
+  /* display: flex; */
+  float: left;
+}
+.timeline-box:nth-child(2n) img{
+    float: right;
+}
+
+.timeline-box .head {
+  text-align: right;
+}
+.timeline-box .head h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #2857a4;
+  font-weight: 900;
+}
+.timeline-box .head h5{
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: rgb(255, 128, 0);
+    font-weight: 900;
+    font-size:20px;
+}
+.timeline-box .head p{
+    font-size: 18px;
+    color: rgb(32, 31, 31);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    margin-top: 12px;
+
+}
+.timeline-box:nth-child(2n) {
+  left: 53%;
+  text-align: right;
+
+  
+}
+.timeline-box:nth-child(2n) .head{
+    text-align: left;
+}
+
+.timeline-box:nth-child(2n + 1)::after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: -14.5%;
+  border-radius: 50%;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: grey;
+  z-index: 1;
+}
+.timeline-box:nth-child(2n)::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -8.3%;
+  border-radius: 50%;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: grey;
+  z-index: 1;
+}
+.timeline-divider {
+  position: absolute;
+  height: 90%;
+  width: 0;
+  border: 2px dashed #85b2d06b;
+  top: 10%;
+  left: 50%;
+}
+.timeline-traveller {
+  position: sticky;
+  top: 25%;
+  transform: rotate(90deg);
+  z-index: 2;
+  font-size: 22px;
+  color: rgb(62, 62, 192);
+  font-weight: lighter;
+}
+
+
+/* education Section */
+/* Portfolio Section */
+
+.pf-box{
+    display: grid;
+    margin-bottom:55px;
+ grid-gap: 90px;
+ grid-template-areas: 'fi si ti'
+                      'fri fvi sxi';
+}
+.pf-box img{
+    width: 320px;
+    height: 300px; 
+    
+}
+.pf-box img:hover{
+  border: 2px solid rgb(196, 193, 193);
+}
+.f-i{
+    grid-area: fi;
+}
+.s-i{
+    grid-area: si;
+}
+.t-i{
+    grid-area: ti;
+}
+.fr-i{
+    grid-area: fri;
+}
+.fv-i{
+    grid-area: fvi;
+}
+.sx-i{
+    grid-area: sxi;
+}
+
+/*---------------- contact section------- */
+
+#contact{
+ background-image: radial-gradient(rgba(50, 50, 193, 0.719),rgb(35, 2, 64));
+}
+.cont-sec{
+  display: grid;
+  /* grid-template-areas: 'left right'; */
+  /* border: 2px solid black; */
+  width: 95%;
+  
+}
+.left-part{
+  grid-area: left;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+.right-part p{
+  font-size: 20px;
+  color: black;
+  text-align: justify;
+
+}
+.right-part{
+  grid-area: right;
+  width: 50vw;
+  
+}
+.right-part span{
+  float: left;
+  /* margin-top: 22px; */
+}
+.right-part i{
+  margin-right: 25px;
+  font-size: 20px;
+  margin-top: 22px;
+}
+.right-part h5{
+  margin-top: 22px;
+}
+
+input{
+  border: none;
+  border-bottom: 2px solid black;
+  width: 450px; 
+ background-color: rgba(120,255,10,0);
+}  
+form div{
+  line-height: 80px; 
+}
+input::placeholder{
+  color: black;
+  font-size: 22px; 
+} 
+#contact ul li a i{
+ color: grey; 
+}
+
+/* ---------MEDIA QUERY------------ */
+
+@media screen and (max-width:415px){
+  #about-para{
+    margin: 10px 10px;
+    font-size: 18px;
+  }
+  .skill-display{
+    display: flex;
+
+    width: fit-content;
+    
+  }
+  #portfolio{
+    display: flex;
+    flex-direction: column;
+  }
+  .left-part form{
+    width: 350px;
+    /* display:none; */
+  }
+  .left-part form input{
+    width: 330px;
+  } 
+  .timeline{
+    display: flex;
+    flex-direction: column;
+  }
+  .pf-box{
+    display: flex;
+    flex-direction: column;
+  }
+}
