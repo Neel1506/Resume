@@ -6,7 +6,7 @@ body {
 
 #body-header {
   height: 65vh;
-  background-image: url("D:/MySystem/jpg/desktop.jpg");
+  background-image: url("desktop.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
