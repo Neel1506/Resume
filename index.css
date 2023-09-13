@@ -475,4 +475,7 @@ input::placeholder{
     display: flex;
     flex-direction: column;
   }
+  #body-header{
+
+  }
 }
