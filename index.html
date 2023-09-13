@@ -9,13 +9,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
   </head>
   
   <body>
   <div class="container">
   <header id="body-header">
-    <nav>
+    <!-- Navba for Mobile view  -->
+
+    <div class="collapse" id="navbarToggleExternalContent">
+          <nav>
+        <ul class="horizontal-list text-center nav-menu bg-transparent d-flex flex-column">
+          <li><a href="#home"> Home</a></li>
+          <li><a href="#about"> About</a></li>
+          <li><a href="#skill"> Skills</a></li>
+          <li><a href="#experience"> Experience</a></li>
+          <li><a href="#education"> Education</a></li>
+          <li><a href="#portfolio"> Portfolio</a></li>
+          <li><a href="#contact"> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <nav class="navbar navbar-dark bg-transparent">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+
+    <!-- Navigation Bar -->
+    <nav id="desktop-nav">
       <ul class="horizontal-list text-center nav-menu">
         <li><a href="#home"> Home</a></li>
         <li><a href="#about"> About</a></li>
@@ -64,21 +89,9 @@
       </div>
 
       <p id="about-para">
-        Lorem ipsum dolor, sit
-        <span class="text-highlight"> amet consectetur adipisicing elit </span>. Fuga unde dolores voluptate aut
-        eveniet, quidem officia excepturi
-        nisi ad repudiandae<span class="text-highlight">quia nobis facere.
-        </span>
-        nobis! Mollitia enim aspernatur quo pariatur perferendis! Iste porro
-        ratione perferendis. Adipisci suscipit impedit architecto, Obcaecati
-        beatae porro asperiores quas, animi vitae reprehenderit quae? Eligendi
-        repellendus
-        <span class="text-highlight"> sapiente reprehenderit</span> maxime
-        sed? Sint, vel explicabo. Ipsam Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Excepturi? quidem
-        <span class="text-highlight"> pariatur perferendis!</span> cumque
-        debitis beatae, consequuntur harum. Cupiditate nihil eaque quas, ut
-        dignissimos
+        Hello, I am Neel Patel <br>
+         <br>
+          I am work as a <span class="text-highlight">web developer</span>. I am a software engineer who loves to <span class="text-highlight">create Websites </span> as well as<span class="text-highlight">Apps</span>   for people. I think that people should look at the bigger picture when they are building something. I love to work in groups where everyone can voice their opinions and ideas. In the end, I love to work towards one goal where in the end we all can contribute towards <span class="text-highlight"> making a good website.</span> In my free time, you can see me listening to songs and binge-watching series <span class="text-highlight">when I am not working </span> my clients. 
       </p>
     </section>
 
@@ -119,7 +132,7 @@
         <div class="skill-progress">
           <div class="sixty-five-percent mb-blue">
             <div class="skill-name">
-              <span>JS</span>
+              <span>BOOTSTRAP</span>
             </div>
           </div>
         </div>
@@ -128,7 +141,7 @@
         <div class="skill-progress">
           <div class="hundared-percent mb-blue">
             <div class="skill-name">
-              <span>JAVA</span>
+              <span>JS</span>
             </div>
           </div>
         </div>
@@ -137,7 +150,7 @@
         <div class="skill-progress">
           <div class="six mb-blue">
             <div class="skill-name">
-              <span>Android</span>
+              <span>PHP</span>
             </div>
           </div>
         </div>
@@ -147,7 +160,7 @@
         <div class="skill-progress">
           <div class="seventh mb-blue">
             <div class="skill-name">
-              <span>iOS</span>
+              <span>React</span>
             </div>
           </div>
         </div>
@@ -166,10 +179,22 @@
         <div class="skill-progress">
           <div class="nine mb-blue">
             <div class="skill-name">
-              <span>Vuejs</span>
+              <span>MongoDB</span>
             </div>
           </div>
         </div>
+
+                <!----------- ten --------->
+
+                <div class="skill-progress">
+                  <div class="ten mb-blue">
+                    <div class="skill-name">
+                      <span>Github</span>
+                    </div>
+                  </div>
+                </div>
+
+
       </div>
     </section>
 
@@ -184,7 +209,7 @@
         <!-- -------timeline-box one---------- -->
         <div class="timeline-box">
           <div class="wx-img">
-            <img src="D:\MySystem\png/cn-img.png" alt="" />
+            <img src="cn-img.png" alt="" />
           </div>
           <div class="head">
             <h3>Founding Member</h3>
@@ -202,7 +227,7 @@
         <!-------------- timeline-box-2 --------------->
         <div class="timeline-box">
           <div class="wx-img">
-            <img src="D:\MySystem\png/cn-img.png" alt="" />
+            <img src="cn-img.png" alt="" />
           </div>
           <div class="head">
             <h3>Founding Member</h3>
@@ -218,7 +243,7 @@
         </div>
         <div class="timeline-box">
           <div class="wx-img">
-            <img src="D:\MySystem\png/cn-img.png" alt="" />
+            <img src="cn-img.png" alt="" />
           </div>
           <div class="head">
             <h3>Founding Member</h3>
@@ -234,7 +259,7 @@
         </div>
         <div class="timeline-box">
           <div class="wx-img">
-            <img src="D:\MySystem\png/cn-img.png" alt="" />
+            <img src="cn-img.png" alt="" />
           </div>
           <div class="head">
             <h3>Founding Member</h3>
@@ -436,6 +461,8 @@
     </section>
   </main>
 </div>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
